@@ -1,41 +1,30 @@
 # TrustScan Security Scan — managed by TrustScan
 #
-# You may change `on:` to choose when this runs. Leave the job as it is.
-#
-# Scans started from the dashboard use `workflow_dispatch`; keep it.
-# A run you trigger here (a push, a schedule) appears in the dashboard once
-# "Show scans from this repository's workflow" is turned on for the
-# repository, on the New Scan page. Until then such a run is ignored.
-# For pull requests, use the dashboard's pull-request checks, not
-# `on: pull_request`.
+# TrustScan starts this workflow for each scan you run or schedule in the
+# TrustScan dashboard (on demand, on every push, nightly, on pull requests).
+# It does nothing when started any other way. TrustScan restores this file
+# as written at the next scan.
 name: TrustScan Security Scan
-run-name: Security Scan ${{ inputs.job_id || format('gh-{0}', github.run_id) }}
+run-name: Security Scan ${{ inputs.job_id }}
 on:
   workflow_dispatch:
     inputs:
       job_id:
-        description: Scan Job ID (set by the dashboard)
-        required: false
+        description: Scan job ID (set by TrustScan)
+        required: true
         type: string
-      scanners:
-        description: Scanners to run (set by the dashboard)
-        required: false
+      ticket:
+        description: One-time scan ticket (set by TrustScan)
+        required: true
         type: string
-  # Scan every push to main:
-  # push:
-  #   branches: [main]
-  #   paths-ignore: ['docs/**', '**.md']
-  # Scan every night at 02:00 UTC:
-  # schedule:
-  #   - cron: '0 2 * * *'
 
 permissions:
   contents: read
-  security-events: write
+  id-token: write
 
 jobs:
   security-scan:
     uses: cs14lab/scan-engine/.github/workflows/reusable-scan.yml@v2
     with:
       job_id: ${{ inputs.job_id }}
-      scanners: ${{ inputs.scanners }}
+      ticket: ${{ inputs.ticket }}
