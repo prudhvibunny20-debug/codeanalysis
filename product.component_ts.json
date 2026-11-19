@@ -1,0 +1,759 @@
+{
+  "rel_path": "juice-shop-master/frontend/src/app/product/product.component.ts",
+  "language": "typescript",
+  "size_bytes": 6924,
+  "file_hash": "4b1a84e10cc45b291df269a12c1e71b5e786e53dfa00cb9bdc15985d21d5d8b2",
+  "is_test_file": false,
+  "parse_error": false,
+  "no_grammar_available": false,
+  "grammar_load_failed": false,
+  "has_syntax_error": false,
+  "error_message": null,
+  "functions": [
+    {
+      "name": "addToBasket",
+      "start_line": 38,
+      "end_line": 179,
+      "params": [
+        "id?: number"
+      ],
+      "is_method": false,
+      "class_name": null
+    },
+    {
+      "name": "<anonymous>",
+      "start_line": 46,
+      "end_line": 63,
+      "params": [
+        "product"
+      ],
+      "is_method": false,
+      "class_name": null
+    },
+    {
+      "name": "<anonymous>",
+      "start_line": 50,
+      "end_line": 55,
+      "params": [
+        "basketAddProduct"
+      ],
+      "is_method": false,
+      "class_name": null
+    },
+    {
+      "name": "<anonymous>",
+      "start_line": 56,
+      "end_line": 61,
+      "params": [
+        "translationId"
+      ],
+      "is_method": false,
+      "class_name": null
+    },
+    {
+      "name": "<anonymous>",
+      "start_line": 64,
+      "end_line": 66,
+      "params": [
+        "err"
+      ],
+      "is_method": false,
+      "class_name": null
+    },
+    {
+      "name": "<anonymous>",
+      "start_line": 72,
+      "end_line": 174,
+      "params": [
+        "basket"
+      ],
+      "is_method": false,
+      "class_name": null
+    },
+    {
+      "name": "<anonymous>",
+      "start_line": 81,
+      "end_line": 125,
+      "params": [
+        "existingBasketItem"
+      ],
+      "is_method": false,
+      "class_name": null
+    },
+    {
+      "name": "<anonymous>",
+      "start_line": 86,
+      "end_line": 116,
+      "params": [
+        "updatedBasketItem"
+      ],
+      "is_method": false,
+      "class_name": null
+    },
+    {
+      "name": "<anonymous>",
+      "start_line": 90,
+      "end_line": 111,
+      "params": [
+        "product"
+      ],
+      "is_method": false,
+      "class_name": null
+    },
+    {
+      "name": "<anonymous>",
+      "start_line": 96,
+      "end_line": 102,
+      "params": [
+        "basketAddSameProduct"
+      ],
+      "is_method": false,
+      "class_name": null
+    },
+    {
+      "name": "<anonymous>",
+      "start_line": 103,
+      "end_line": 109,
+      "params": [
+        "translationId"
+      ],
+      "is_method": false,
+      "class_name": null
+    },
+    {
+      "name": "<anonymous>",
+      "start_line": 112,
+      "end_line": 114,
+      "params": [
+        "err"
+      ],
+      "is_method": false,
+      "class_name": null
+    },
+    {
+      "name": "<anonymous>",
+      "start_line": 117,
+      "end_line": 123,
+      "params": [
+        "err"
+      ],
+      "is_method": false,
+      "class_name": null
+    },
+    {
+      "name": "<anonymous>",
+      "start_line": 126,
+      "end_line": 128,
+      "params": [
+        "err"
+      ],
+      "is_method": false,
+      "class_name": null
+    },
+    {
+      "name": "<anonymous>",
+      "start_line": 141,
+      "end_line": 167,
+      "params": [
+        "newBasketItem"
+      ],
+      "is_method": false,
+      "class_name": null
+    },
+    {
+      "name": "<anonymous>",
+      "start_line": 143,
+      "end_line": 162,
+      "params": [
+        "product"
+      ],
+      "is_method": false,
+      "class_name": null
+    },
+    {
+      "name": "<anonymous>",
+      "start_line": 147,
+      "end_line": 153,
+      "params": [
+        "basketAddProduct"
+      ],
+      "is_method": false,
+      "class_name": null
+    },
+    {
+      "name": "<anonymous>",
+      "start_line": 154,
+      "end_line": 160,
+      "params": [
+        "translationId"
+      ],
+      "is_method": false,
+      "class_name": null
+    },
+    {
+      "name": "<anonymous>",
+      "start_line": 163,
+      "end_line": 165,
+      "params": [
+        "err"
+      ],
+      "is_method": false,
+      "class_name": null
+    },
+    {
+      "name": "<anonymous>",
+      "start_line": 168,
+      "end_line": 171,
+      "params": [
+        "err"
+      ],
+      "is_method": false,
+      "class_name": null
+    },
+    {
+      "name": "<anonymous>",
+      "start_line": 175,
+      "end_line": 177,
+      "params": [
+        "err"
+      ],
+      "is_method": false,
+      "class_name": null
+    },
+    {
+      "name": "showDetail",
+      "start_line": 181,
+      "end_line": 189,
+      "params": [
+        "product: Product"
+      ],
+      "is_method": false,
+      "class_name": null
+    }
+  ],
+  "classes": [
+    {
+      "name": "ProductComponent",
+      "start_line": 26,
+      "end_line": 190
+    }
+  ],
+  "calls": [
+    {
+      "callee": "Component",
+      "line": 20,
+      "args_preview": [
+        "{\n  selector: 'app-product',\n  imports: [TranslateModule, MatCardModule, MatTooltip, MatButton, MatIcon],\n  templateUrl:\u2026"
+      ],
+      "security_tags": []
+    },
+    {
+      "callee": "inject",
+      "line": 27,
+      "args_preview": [
+        "BasketService"
+      ],
+      "security_tags": []
+    },
+    {
+      "callee": "inject",
+      "line": 28,
+      "args_preview": [
+        "ProductService"
+      ],
+      "security_tags": []
+    },
+    {
+      "callee": "inject",
+      "line": 29,
+      "args_preview": [
+        "TranslateService"
+      ],
+      "security_tags": []
+    },
+    {
+      "callee": "inject",
+      "line": 30,
+      "args_preview": [
+        "SnackBarHelperService"
+      ],
+      "security_tags": []
+    },
+    {
+      "callee": "inject",
+      "line": 31,
+      "args_preview": [
+        "MatDialog"
+      ],
+      "security_tags": []
+    },
+    {
+      "callee": "input.required",
+      "line": 34,
+      "args_preview": [],
+      "security_tags": []
+    },
+    {
+      "callee": "input.required",
+      "line": 35,
+      "args_preview": [],
+      "security_tags": []
+    },
+    {
+      "callee": "input.required",
+      "line": 36,
+      "args_preview": [],
+      "security_tags": []
+    },
+    {
+      "callee": "this.isLoggedIn",
+      "line": 43,
+      "args_preview": [],
+      "security_tags": []
+    },
+    {
+      "callee": "this.basketService.addToGuestBasket",
+      "line": 44,
+      "args_preview": [
+        "id"
+      ],
+      "security_tags": []
+    },
+    {
+      "callee": "this.productService.get(id).subscribe",
+      "line": 45,
+      "args_preview": [
+        "{\n        next: (product) => {\n          this.translateService\n            .get('BASKET_ADD_PRODUCT', { product: product\u2026"
+      ],
+      "security_tags": []
+    },
+    {
+      "callee": "this.productService.get",
+      "line": 45,
+      "args_preview": [
+        "id"
+      ],
+      "security_tags": []
+    },
+    {
+      "callee": "this.translateService\n            .get('BASKET_ADD_PRODUCT', { product: product.name })\n            .subscribe",
+      "line": 47,
+      "args_preview": [
+        "{\n              next: (basketAddProduct) => {\n                this.snackBarHelperService.open(\n                  basketA\u2026"
+      ],
+      "security_tags": []
+    },
+    {
+      "callee": "this.translateService\n            .get",
+      "line": 47,
+      "args_preview": [
+        "'BASKET_ADD_PRODUCT'",
+        "{ product: product.name }"
+      ],
+      "security_tags": []
+    },
+    {
+      "callee": "this.snackBarHelperService.open",
+      "line": 51,
+      "args_preview": [
+        "basketAddProduct",
+        "'confirmBar'"
+      ],
+      "security_tags": []
+    },
+    {
+      "callee": "this.snackBarHelperService.open",
+      "line": 57,
+      "args_preview": [
+        "translationId",
+        "'confirmBar'"
+      ],
+      "security_tags": []
+    },
+    {
+      "callee": "console.log",
+      "line": 65,
+      "args_preview": [
+        "err"
+      ],
+      "security_tags": []
+    },
+    {
+      "callee": "this.basketService.find(Number(sessionStorage.getItem('bid'))).subscribe",
+      "line": 71,
+      "args_preview": [
+        "{\n      next: (basket) => {\n        const productsInBasket: any = basket.Products\n        let found = false\n        for \u2026"
+      ],
+      "security_tags": []
+    },
+    {
+      "callee": "this.basketService.find",
+      "line": 71,
+      "args_preview": [
+        "Number(sessionStorage.getItem('bid'))"
+      ],
+      "security_tags": []
+    },
+    {
+      "callee": "Number",
+      "line": 71,
+      "args_preview": [
+        "sessionStorage.getItem('bid')"
+      ],
+      "security_tags": []
+    },
+    {
+      "callee": "sessionStorage.getItem",
+      "line": 71,
+      "args_preview": [
+        "'bid'"
+      ],
+      "security_tags": []
+    },
+    {
+      "callee": "this.basketService\n              .get(productsInBasket[i].BasketItem.id)\n              .subscribe",
+      "line": 78,
+      "args_preview": [
+        "{\n                next: (existingBasketItem) => {\n                  const newQuantity = existingBasketItem.quantity + 1\n\u2026"
+      ],
+      "security_tags": []
+    },
+    {
+      "callee": "this.basketService\n              .get",
+      "line": 78,
+      "args_preview": [
+        "productsInBasket[i].BasketItem.id"
+      ],
+      "security_tags": []
+    },
+    {
+      "callee": "this.basketService\n                    .put(existingBasketItem.id, { quantity: newQuantity })\n                    .subscribe",
+      "line": 83,
+      "args_preview": [
+        "{\n                      next: (updatedBasketItem) => {\n                        this.productService\n                     \u2026"
+      ],
+      "security_tags": []
+    },
+    {
+      "callee": "this.basketService\n                    .put",
+      "line": 83,
+      "args_preview": [
+        "existingBasketItem.id",
+        "{ quantity: newQuantity }"
+      ],
+      "security_tags": []
+    },
+    {
+      "callee": "this.productService\n                          .get(updatedBasketItem.ProductId)\n                          .subscribe",
+      "line": 87,
+      "args_preview": [
+        "{\n                            next: (product) => {\n                              this.translateService\n                 \u2026"
+      ],
+      "security_tags": []
+    },
+    {
+      "callee": "this.productService\n                          .get",
+      "line": 87,
+      "args_preview": [
+        "updatedBasketItem.ProductId"
+      ],
+      "security_tags": []
+    },
+    {
+      "callee": "this.translateService\n                                .get('BASKET_ADD_SAME_PRODUCT', {\n                                  product: product.name\n                                })\n                                .subscribe",
+      "line": 91,
+      "args_preview": [
+        "{\n                                  next: (basketAddSameProduct) => {\n                                    this.snackBarH\u2026"
+      ],
+      "security_tags": []
+    },
+    {
+      "callee": "this.translateService\n                                .get",
+      "line": 91,
+      "args_preview": [
+        "'BASKET_ADD_SAME_PRODUCT'",
+        "{\n                                  product: product.name\n                                }"
+      ],
+      "security_tags": []
+    },
+    {
+      "callee": "this.snackBarHelperService.open",
+      "line": 97,
+      "args_preview": [
+        "basketAddSameProduct",
+        "'confirmBar'"
+      ],
+      "security_tags": []
+    },
+    {
+      "callee": "this.basketService.updateNumberOfCartItems",
+      "line": 101,
+      "args_preview": [],
+      "security_tags": []
+    },
+    {
+      "callee": "this.snackBarHelperService.open",
+      "line": 104,
+      "args_preview": [
+        "translationId",
+        "'confirmBar'"
+      ],
+      "security_tags": []
+    },
+    {
+      "callee": "this.basketService.updateNumberOfCartItems",
+      "line": 108,
+      "args_preview": [],
+      "security_tags": []
+    },
+    {
+      "callee": "console.log",
+      "line": 113,
+      "args_preview": [
+        "err"
+      ],
+      "security_tags": []
+    },
+    {
+      "callee": "this.snackBarHelperService.open",
+      "line": 118,
+      "args_preview": [
+        "err.error?.error",
+        "'errorBar'"
+      ],
+      "security_tags": []
+    },
+    {
+      "callee": "console.log",
+      "line": 122,
+      "args_preview": [
+        "err"
+      ],
+      "security_tags": []
+    },
+    {
+      "callee": "console.log",
+      "line": 127,
+      "args_preview": [
+        "err"
+      ],
+      "security_tags": []
+    },
+    {
+      "callee": "this.basketService\n            .save({\n              ProductId: id,\n              BasketId: sessionStorage.getItem('bid'),\n              quantity: 1\n            })\n            .subscribe",
+      "line": 134,
+      "args_preview": [
+        "{\n              next: (newBasketItem) => {\n                this.productService.get(newBasketItem.ProductId).subscribe({\n\u2026"
+      ],
+      "security_tags": []
+    },
+    {
+      "callee": "this.basketService\n            .save",
+      "line": 134,
+      "args_preview": [
+        "{\n              ProductId: id,\n              BasketId: sessionStorage.getItem('bid'),\n              quantity: 1\n        \u2026"
+      ],
+      "security_tags": []
+    },
+    {
+      "callee": "sessionStorage.getItem",
+      "line": 137,
+      "args_preview": [
+        "'bid'"
+      ],
+      "security_tags": []
+    },
+    {
+      "callee": "this.productService.get(newBasketItem.ProductId).subscribe",
+      "line": 142,
+      "args_preview": [
+        "{\n                  next: (product) => {\n                    this.translateService\n                      .get('BASKET_AD\u2026"
+      ],
+      "security_tags": []
+    },
+    {
+      "callee": "this.productService.get",
+      "line": 142,
+      "args_preview": [
+        "newBasketItem.ProductId"
+      ],
+      "security_tags": []
+    },
+    {
+      "callee": "this.translateService\n                      .get('BASKET_ADD_PRODUCT', { product: product.name })\n                      .subscribe",
+      "line": 144,
+      "args_preview": [
+        "{\n                        next: (basketAddProduct) => {\n                          this.snackBarHelperService.open(\n     \u2026"
+      ],
+      "security_tags": []
+    },
+    {
+      "callee": "this.translateService\n                      .get",
+      "line": 144,
+      "args_preview": [
+        "'BASKET_ADD_PRODUCT'",
+        "{ product: product.name }"
+      ],
+      "security_tags": []
+    },
+    {
+      "callee": "this.snackBarHelperService.open",
+      "line": 148,
+      "args_preview": [
+        "basketAddProduct",
+        "'confirmBar'"
+      ],
+      "security_tags": []
+    },
+    {
+      "callee": "this.basketService.updateNumberOfCartItems",
+      "line": 152,
+      "args_preview": [],
+      "security_tags": []
+    },
+    {
+      "callee": "this.snackBarHelperService.open",
+      "line": 155,
+      "args_preview": [
+        "translationId",
+        "'confirmBar'"
+      ],
+      "security_tags": []
+    },
+    {
+      "callee": "this.basketService.updateNumberOfCartItems",
+      "line": 159,
+      "args_preview": [],
+      "security_tags": []
+    },
+    {
+      "callee": "console.log",
+      "line": 164,
+      "args_preview": [
+        "err"
+      ],
+      "security_tags": []
+    },
+    {
+      "callee": "this.snackBarHelperService.open",
+      "line": 169,
+      "args_preview": [
+        "err.error?.error",
+        "'errorBar'"
+      ],
+      "security_tags": []
+    },
+    {
+      "callee": "console.log",
+      "line": 170,
+      "args_preview": [
+        "err"
+      ],
+      "security_tags": []
+    },
+    {
+      "callee": "console.log",
+      "line": 176,
+      "args_preview": [
+        "err"
+      ],
+      "security_tags": []
+    },
+    {
+      "callee": "this.dialog.open",
+      "line": 182,
+      "args_preview": [
+        "ProductDetailsComponent",
+        "{\n      width: '500px',\n      height: 'max-content',\n      data: {\n        productData: product\n      }\n    }"
+      ],
+      "security_tags": []
+    }
+  ],
+  "assignments": [
+    {
+      "lhs": "productsInBasket",
+      "rhs_type": "member_expression",
+      "rhs_preview": "basket.Products",
+      "line": 73,
+      "security_tags": []
+    },
+    {
+      "lhs": "found",
+      "rhs_type": "false",
+      "rhs_preview": "false",
+      "line": 74,
+      "security_tags": []
+    },
+    {
+      "lhs": "i",
+      "rhs_type": "number",
+      "rhs_preview": "0",
+      "line": 75,
+      "security_tags": []
+    },
+    {
+      "lhs": "found",
+      "rhs_type": "true",
+      "rhs_preview": "true",
+      "line": 77,
+      "security_tags": []
+    },
+    {
+      "lhs": "newQuantity",
+      "rhs_type": "binary_expression",
+      "rhs_preview": "existingBasketItem.quantity + 1",
+      "line": 82,
+      "security_tags": []
+    }
+  ],
+  "imports": [
+    {
+      "text": "import { Component, inject, input } from '@angular/core'",
+      "line": 7
+    },
+    {
+      "text": "import { BasketService } from '../Services/basket.service'",
+      "line": 8
+    },
+    {
+      "text": "import { ProductService } from '../Services/product.service'",
+      "line": 9
+    },
+    {
+      "text": "import { SnackBarHelperService } from '../Services/snack-bar-helper.service'",
+      "line": 10
+    },
+    {
+      "text": "import { Product, ProductTableEntry } from '../Models/product.model'",
+      "line": 11
+    },
+    {
+      "text": "import { TranslateModule, TranslateService } from '@ngx-translate/core'",
+      "line": 12
+    },
+    {
+      "text": "import { MatCardModule } from '@angular/material/card'",
+      "line": 13
+    },
+    {
+      "text": "import { MatTooltip } from '@angular/material/tooltip'",
+      "line": 14
+    },
+    {
+      "text": "import { MatButton } from '@angular/material/button'",
+      "line": 15
+    },
+    {
+      "text": "import { MatIcon } from '@angular/material/icon'",
+      "line": 16
+    },
+    {
+      "text": "import { ProductDetailsComponent } from '../product-details/product-details.component'",
+      "line": 17
+    },
+    {
+      "text": "import { MatDialog } from '@angular/material/dialog'",
+      "line": 18
+    }
+  ]
+}
